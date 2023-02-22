@@ -27,7 +27,7 @@ public class SmokeTest {
 	
 	public void startup() {
 		driverManager = DriverManagerFactory.getManager(DriverTypes.CHROME);
-		//WebDriverManager.chromedriver().setup();
+		WebDriverManager.chromedriver().setup();
 		driver = driverManager.getDriver();
 		driver.navigate().to("https://demoqa.com/books");
 		driver.manage().window().maximize();
